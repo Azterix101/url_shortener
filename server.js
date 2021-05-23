@@ -45,12 +45,12 @@ const url_redirect_middleware = (req,res,next) =>{
 const url_shortener_middleware = (req,res,next) =>{
 
   const { url } = req.body;
-  const search_url =url.replace(/https?:\/\//, '');
+  /*const search_url =url.replace(/https?:\/\//, '');
   dns.lookup(search_url,function (err, addresses) {
     if (!addresses || err){
       hostname_status = 'invalid Hostname';
     }
-  })
+  })*/
   
     if (
       url.match(
